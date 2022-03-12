@@ -5,11 +5,10 @@
     int voto1 = 0, voto2 = 0, voto3 = 0, voto4 = 0, voto5 = 0, min = 0;
     printf("Dammi i voti \n");
     scanf("%d%d%d%d%d", &voto1, &voto2, &voto3, &voto4, &voto5); // Potevo fare richiedere un numero in input a volta, ma ho preferito farlo così, poichè è più ottimizzato così.
-    if (voto1 > voto2)
+    min = voto1; 
+    if (min > voto2)
     {
         min = voto2;
-    } else {
-        min = voto1;
     }
     if (min > voto3){
         min = voto3;
